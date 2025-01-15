@@ -1,0 +1,59 @@
+Метод capitalize
+
+Описание: Метод capitalize не обрабатывает строки с уже существующими заглавными буквами корректно.
+
+Шаги воспроизведения:
+1. Вызвать метод capitalize с аргументом "SkyPro".
+
+Ожидаемый результат: "SkyPro".
+
+Фактический результат: "Skypro".
+
+
+Метод ends_with (тест test_ends_with[SkyPro-o-True])
+
+Описание: Метод ends_with вызывает ошибку, так как метод называется end_with.
+
+Шаги воспроизведения:
+1. Вызвать тест test_ends_with[SkyPro-o-True].
+
+Ожидаемый результат: True.
+
+Фактический результат: AttributeError: 'StringUtils' object has no attribute 'ends_with'. Did you mean: 'end_with'?.
+
+
+Метод ends_with (тест test_ends_with[SkyPro-y-False])
+
+Описание: Метод ends_with вызывает ошибку, так как метод называется end_with.
+
+Шаги воспроизведения:
+1. Вызвать тест test_ends_with[SkyPro-y-False].
+
+Ожидаемый результат: False.
+
+Фактический результат: AttributeError: 'StringUtils' object has no attribute 'ends_with'. Did you mean: 'end_with'?.
+
+
+Метод ends_with (тест test_ends_with[-S-False])
+
+Описание: Метод ends_with вызывает ошибку, так как метод называется end_with.
+
+Шаги воспроизведения:
+1. Вызвать тест test_ends_with[-S-False].
+
+Ожидаемый результат: False.
+
+Фактический результат: AttributeError: 'StringUtils' object has no attribute 'ends_with'. Did you mean: 'end_with'?.
+
+
+Метод ends_with (тест test_ends_with[None-S-False])
+
+Описание: Метод ends_with вызывает ошибку, так как метод называется end_with.
+
+Шаги воспроизведения:
+1. Вызвать тест test_ends_with[None-S-False].
+
+Ожидаемый результат: False.
+
+Фактический результат: AttributeError: 'StringUtils' object has no attribute 'ends_with'. Did you mean: 'end_with'?.
+
