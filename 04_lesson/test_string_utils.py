@@ -74,9 +74,9 @@ def test_starts_with(string, symbol, expected_output):
     ("", "S", False),
     (None, "S", False)
 ])
-def test_ends_with(string, symbol, expected_output):
+def test_end_with(string, symbol, expected_output):
     utils = StringUtils()
-    assert utils.ends_with(string, symbol) == expected_output
+    assert utils.end_with(string, symbol) == expected_output
 
 
 @pytest.mark.parametrize("string, expected_output", [
