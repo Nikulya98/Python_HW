@@ -11,11 +11,7 @@ button = driver.find_element(
 )
 button.click()
 
-wait = WebDriverWait(driver, 20)
-
-wait.until(
-    EC.presence_of_element_located((By.CSS_SELECTOR, ".bg-success"))
-)
+wait = WebDriverWait(driver, 30)
 message = wait.until(
     EC.visibility_of_element_located((By.CSS_SELECTOR, ".bg-success"))
 )
